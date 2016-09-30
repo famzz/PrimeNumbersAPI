@@ -1,4 +1,4 @@
-package sample;
+package com.primenumbersapi.gui;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Menu;
@@ -14,7 +14,7 @@ import java.util.*;
 import static java.awt.SystemColor.menu;
 
 @SuppressWarnings("WeakerAccess")
-class View {
+public class View {
 
     public void createView(Stage primaryStage) throws Exception{
 
