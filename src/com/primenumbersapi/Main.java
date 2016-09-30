@@ -15,6 +15,9 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        // Example code showing how to initialise the database manager.
+        //String path = new File("src\\resources\\primes.db").getAbsolutePath();
+        //DatabaseManager databaseManager = new DatabaseManager("jdbc:sqlite:" + path, "primes");
         launch(args);
     }
 }
