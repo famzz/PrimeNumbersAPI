@@ -5,6 +5,7 @@
 
 # Package Files #
 *.jar
+!sqlite-jdbc-3.14.2.jar
 *.war
 *.ear
 
