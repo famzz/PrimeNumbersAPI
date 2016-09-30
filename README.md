@@ -1,2 +1,2 @@
-# PrimeNumbersAPI
-A Program made for mathematical concepts, namely PrimeNumbers at the moment and may be expanded upon later
+# Prime Numbers API
+A program made for mathematical concepts, largely dealing with prime numbers at the moment; may be expanded upon later.
