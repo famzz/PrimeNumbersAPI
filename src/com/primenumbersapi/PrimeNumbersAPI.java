@@ -1,5 +1,9 @@
 package com.primenumbersapi;
 
+import com.primenumbersapi.api.Prime;
+
+import java.util.List;
+
 public class PrimeNumbersAPI {
     
     private PrimeNumbersAPI() {
@@ -11,5 +15,17 @@ public class PrimeNumbersAPI {
     public static PrimeNumbersAPI getInstance() {
         //TODO: Setup.
         return new PrimeNumbersAPI();
+    }
+
+    public Prime getPrime(String number) {
+        return null;
+    }
+
+    public Number getNumber(String number) {
+        return null;
+    }
+
+    public List<Prime> getPrimesInRange(Number min, Number max) {
+        return null;
     }
 }
