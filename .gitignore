@@ -3,7 +3,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 !sqlite-jdbc-3.14.2.jar
 *.war
