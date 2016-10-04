@@ -2,6 +2,9 @@ package com.primenumbersapi.math;
 
 import com.primenumbersapi.api.Prime;
 import com.primenumbersapi.exception.InvalidDigitException;
+import com.primenumbersapi.manager.DatabaseManager;
+
+import java.io.File;
 
 public class MPrime extends MNumber implements Prime {
 
@@ -27,4 +30,13 @@ public class MPrime extends MNumber implements Prime {
          */
         }
     }
+
+    @Override
+    public boolean isPrime(String val){
+        String path = new File("src\\resources\\primes.db").getAbsolutePath();
+        DatabaseManager databaseManager = new DatabaseManager("jdbc:sqlite:" + path, "primes");
+        // I know I'm not supposed to do this. Will change to proper implementation later.
+        return databaseManager.isIntegerInTable("prime", Integer.valueOf(val));
+    }
+
 }
