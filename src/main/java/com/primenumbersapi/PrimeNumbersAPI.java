@@ -10,6 +10,7 @@ import java.util.List;
 public class PrimeNumbersAPI {
 
     private MathFactory factory;
+    private PrimeNumbersAPI instance;
 
     private PrimeNumbersAPI() {
         this.factory = new MathFactory();
@@ -17,7 +18,10 @@ public class PrimeNumbersAPI {
     
     public static PrimeNumbersAPI getInstance() {
         //TODO: Setup.
-        return new PrimeNumbersAPI();
+        if (instance == null) {
+            return new PrimeNumbersAPI();
+        }
+        else return instance;
     }
 
     public Prime getPrime(String number) {
