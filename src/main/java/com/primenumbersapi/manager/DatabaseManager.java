@@ -157,7 +157,7 @@ public class DatabaseManager {
      */
     public int getValue(String column, int row) {
         if (row < 1) {
-            throw new InvalidParameterException("Your row number cannot be less than 1!");
+            throw new InvalidParameterException("Your row number can't be less than 1!");
         }
 
         if (row > 1000000) {
