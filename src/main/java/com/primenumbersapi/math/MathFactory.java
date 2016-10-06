@@ -1,13 +1,9 @@
 package com.primenumbersapi.math;
 
-public class MathFactory {
+public abstract class MathFactory {
 
-    //TODO: All this public really should be private or protected...
-    //TODO: It's all backend, and shouldn't be visible to the end user.
-    private MathFactory() {
-
-    }
-
+    private abstract MathFactory();
+    
     private MNumber getNumber(String value) {
         return null;
     }
