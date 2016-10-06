@@ -7,13 +7,12 @@ import com.primenumbersapi.math.MathFactory;
 
 import java.util.List;
 
-public class PrimeNumbersAPI {
+public class PrimeNumbersAPI extends MathFactory {
 
-    private MathFactory factory;
     private PrimeNumbersAPI instance;
 
     private PrimeNumbersAPI() {
-        this.factory = new MathFactory();
+        
     }
     
     public static PrimeNumbersAPI getInstance() {
@@ -25,15 +24,15 @@ public class PrimeNumbersAPI {
     }
 
     public Prime getPrime(String number) {
-        return factory.getPrime(number);
+        return this.getPrime(number);
     }
 
     public Number getNumber(String number) {
-        return factory.getNumber(number);
+        return this.getNumber(number);
     }
 
     public Polynomial getPolynomial(String equation) {
-        return factory.getPolynomial(equation);
+        return this.getPolynomial(equation);
     }
 
     public List<Prime> getPrimesInRange(Number min, Number max) {
