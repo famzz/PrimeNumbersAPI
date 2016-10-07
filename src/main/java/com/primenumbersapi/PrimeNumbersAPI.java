@@ -9,10 +9,10 @@ import java.util.List;
 
 public class PrimeNumbersAPI extends MathFactory {
 
-    private PrimeNumbersAPI instance;
+    private static PrimeNumbersAPI instance;
 
     private PrimeNumbersAPI() {
-        
+        super();
     }
     
     public static PrimeNumbersAPI getInstance() {

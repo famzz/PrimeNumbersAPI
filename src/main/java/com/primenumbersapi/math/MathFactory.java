@@ -2,7 +2,7 @@ package com.primenumbersapi.math;
 
 public abstract class MathFactory {
 
-    private abstract MathFactory();
+    protected MathFactory() {};
     
     private MNumber getNumber(String value) {
         return null;
