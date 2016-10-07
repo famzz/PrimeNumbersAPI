@@ -2,17 +2,19 @@ package com.primenumbersapi.math;
 
 public abstract class MathFactory {
 
-    protected MathFactory() {};
+    protected MathFactory() {
+
+    }
     
-    private MNumber getNumber(String value) {
+    protected MNumber getMNumber(String value) {
         return null;
     }
 
-    private MPrime getPrime(String value) {
+    protected MPrime getMPrime(String value) {
         return null;
     }
 
-    private MPolynomial getPolynomial(String value) {
+    protected MPolynomial getMPolynomial(String value) {
         return null;
     }
 }

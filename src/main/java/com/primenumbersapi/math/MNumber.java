@@ -34,7 +34,7 @@ public class MNumber implements Number {
         return !isEven();
     }
 
-    private boolean isDigit(char c) {
+    protected static boolean isDigit(char c) {
         return (c >= '0' && c <= '9');
     }
 

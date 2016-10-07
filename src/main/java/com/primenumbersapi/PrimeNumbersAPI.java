@@ -24,15 +24,15 @@ public class PrimeNumbersAPI extends MathFactory {
     }
 
     public Prime getPrime(String number) {
-        return this.getPrime(number);
+        return this.getMPrime(number);
     }
 
     public Number getNumber(String number) {
-        return this.getNumber(number);
+        return this.getMNumber(number);
     }
 
     public Polynomial getPolynomial(String equation) {
-        return this.getPolynomial(equation);
+        return this.getMPolynomial(equation);
     }
 
     public List<Prime> getPrimesInRange(Number min, Number max) {
