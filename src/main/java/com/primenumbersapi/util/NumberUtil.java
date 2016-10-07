@@ -1,8 +1,13 @@
 package com.primenumbersapi.util;
 
+import com.primenumbersapi.exception.InvalidDigitException;
+
 public class NumberUtil {
 
-    public static String add(String number1, String number2) {
+    public static String add(String number1, String number2) throws InvalidDigitException {
+        isInteger(number1);
+        isInteger(number2);
+
         String number = "";
 
         if (number2.length() > number1.length()) {
@@ -39,6 +44,18 @@ public class NumberUtil {
         }
 
         return number;
+    }
+
+    private static void isInteger(String number) throws InvalidDigitException {
+        for (char c : number.toCharArray()) {
+            if (!isDigit(c)) {
+                throw new InvalidDigitException();
+            }
+        }
+    }
+
+    private static boolean isDigit(char c) {
+        return (c >= '0' && c <= '9');
     }
 
 }
