@@ -38,7 +38,7 @@ public class MNumber implements Number {
         return (c >= '0' && c <= '9');
     }
 
-    private String getRawValue() {
+    protected String getRawValue() {
         return this.raw;
     }
 
