@@ -85,7 +85,7 @@ public class NumberUtil {
                 continue;
             }
 
-            // Set to true is we encounter our fist non zero integer.
+            // Set to true when we encounter our first non zero integer.
             noMoreZeroes = true;
 
             // We may not have subtracted from any digits yet if number2 ends in zeroes.
