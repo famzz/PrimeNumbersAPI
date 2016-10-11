@@ -9,7 +9,7 @@ public class NumberUtil {
      * @param number1 The first string to add. Must be an integer.
      * @param number2 The second string to add. Must be an integer.
      * @return The result of the sum, as a string.
-     * @throws InvalidDigitException If any of the arguments suppied are not integers.
+     * @throws InvalidDigitException If any of the arguments supplied are not integers.
      */
     public static String add(String number1, String number2) throws InvalidDigitException {
         isInteger(number1);
