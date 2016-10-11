@@ -70,7 +70,6 @@ public class NumberUtil {
 
         String answer;
         String complement = "";
-        int prevDigit = 0;
         boolean noMoreZeroes = false;
         boolean doneFirstDigit = false;
         int numberOfZeroes = 0;
@@ -78,7 +77,7 @@ public class NumberUtil {
         for (int i = 1; i <= number2.length(); i++) {
             int digit = Character.getNumericValue(number2.charAt(number2.length() - i));
 
-            if (digit == 0 && prevDigit == 0 && !noMoreZeroes) {
+            if (digit == 0 && !noMoreZeroes) {
                 numberOfZeroes++;
                 // If the digit we are subtracting is 0 and the previous digit was 0 and we haven't encountered a non
                 // zero integer yet, then we don't process the digit.
@@ -95,8 +94,6 @@ public class NumberUtil {
             } else {
                 digit = 9 - digit;
             }
-
-            prevDigit = digit;
 
             complement = digit + complement;
         }
