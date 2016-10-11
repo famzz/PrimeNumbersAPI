@@ -79,8 +79,8 @@ public class NumberUtil {
 
             if (digit == 0 && !noMoreZeroes) {
                 numberOfZeroes++;
-                // If the digit we are subtracting is 0 and the previous digit was 0 and we haven't encountered a non
-                // zero integer yet, then we don't process the digit.
+                // If the digit we are subtracting is 0 and we haven't encountered a non zero integer yet, then we don't
+                // process the digit.
                 continue;
             }
 
