@@ -34,6 +34,7 @@ public class NumberUtil {
                 carry = 0;
             }
 
+            // Get the last digit of answer and set it to answer.
             answer = answer % 10;
 
             number = answer + number;
