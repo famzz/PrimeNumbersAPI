@@ -25,7 +25,7 @@ public class MNumber implements Number {
     public boolean isEven() {
         //TODO: Assumes we don't have a decimal.
         char digit = raw.charAt(raw.length() - 1);
-        return even.contains((int) digit);
+        return even.contains(Character.getNumericValue(digit));
     }
 
     @Override
